@@ -6,6 +6,9 @@ on:
       - master
     types: [opened, ready_for_review, synchronize]
 
+permissions:
+  contents: read
+
 jobs:
   semgrep:
     runs-on: ubuntu-latest
